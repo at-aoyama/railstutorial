@@ -8,6 +8,11 @@ group :development do
   gem 'rspec-rails', '3.3.3'
 end
 
+group :test do
+  gem 'selenium-webdriver', '2.47.1'
+  gem 'capybara', '2.5.0'
+end
+
 gem 'sass-rails', '5.0.4'
 gem 'uglifier', '2.7.2'
 gem 'coffee-rails', '4.1.0'
