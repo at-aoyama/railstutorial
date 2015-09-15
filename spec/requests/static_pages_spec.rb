@@ -13,6 +13,11 @@ RSpec.describe "StaticPages", type: :request do
       visit '/static_pages/home'
       expect(page).to have_title("#{base_title} | Home")
     end
+
+    it "should not have a custom page title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
+    end
   end
 
   describe "Help Page" do
